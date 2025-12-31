@@ -3,74 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Ben — CS Student & Developer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
+    <div class="grain-overlay"></div>
+    
+    <nav class="header">
         <div class="container">
-            <div class="left-header">Home</div>
+            <div class="left-header">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">ben</span>
+                <span class="logo-bracket">]</span>
+            </div>
             <ul class="right-header">
-                <li><a href="#">blog</a></li>
-                <li><a href="#">projects</a></li>
-                <li><a href="#">contact </a></li>
+                <li><a href="#work">work</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </div>
-    </div>
+    </nav>
 
-    <div class="hero">
+    <section class="hero">
         <div class="container">
-            <div class="hero-left">
-                <div class="hero_main_text">Hi. I'm Ben. </div>
-                <div class="sub_text">I am a Computer Science Student with a background in Accounting and Insurance. I hope to work on inspiring software making a real impact in today's world and solving daily problems. </div>
-                <button class="signup1">Let's connect!</button>
+            <div class="hero-content">
+                <div class="hero-badge">Available for internships — Summer 2026</div>
+                <h1 class="hero-title">
+                    Building software that<br>
+                    <span class="highlight-text">solves real problems</span>
+                </h1>
+                <p class="hero-description">
+                    CS student with an unconventional path through accounting and insurance. 
+                    I bring a unique perspective to software development—understanding both 
+                    the technical challenges and the business problems worth solving.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn-primary">Get in touch</a>
+                    <a href="#work" class="btn-secondary">View my work</a>
+                </div>
             </div>
-            <div class="hero_img">
-                <!-- <div class="hero-img-text">This is a placeholder for an image</div> -->
-                 <img src="me.jpg" alt="Gorgeous Chocolate Man">
-            </div>
-        </div>
-    </div>
-
-    <div class="center-container">
-        <div class="center-text">Some random information</div>
-        <div class="center-inn-container">
-            <div class="info">
-                <img class="dog" src="images/dog1.jpg" alt="Photo of an Australian Shepherd">
-                <div class="text">this is some subtext under an illustration or image</div>
-            </div>
-            <div class="info">
-                <img class="dog" src="images/dog2.jpg" alt="Photo of an Australian Shepherd">
-                <div class="text">this is some subtext under an illustration or image</div>
-            </div>
-            <div class="info">
-                <img class="dog" src="images/dog3.jpg" alt="Photo of an Australian Shepherd">
-                <div class="text">this is some subtext under an illustration or image</div>
-            </div>
-            <div class="info">
-                <img class="dog" src="images/dog4.jpg" alt="Photo of an Australian Shepherd">
-                <div class="text">this is some subtext under an illustration or image</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="quote-container">
-        <div class="quote">Everything around you that you call life, was made up by people who were no smarter than you. </div>
-        <div class="quote-by">-Steve Jobs</div>
-    </div>
-
-    <div class="action-container">
-        <div class="action-inn-cont">
-            <div class="action-text-container">
-                <div class="action-text">Call to action! It's time</div>
-                <div class="signup-text">Sign up for our product by clicking that button right over there!</div>
-            </div>
-            <div class="signup2-cont">
-                <button class="signup2">Sign up</button>
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <div class="card-icon">💼</div>
+                    <div class="card-label">Business Logic</div>
+                </div>
+                <div class="floating-card card-2">
+                    <div class="card-icon">⚡</div>
+                    <div class="card-label">Clean Code</div>
+                </div>
+                <div class="floating-card card-3">
+                    <div class="card-icon">🎯</div>
+                    <div class="card-label">User Impact</div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="footer"></div>
+    <section id="work" class="work-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Work</h2>
+                <p class="section-subtitle">Projects coming soon—currently building in public</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card placeholder">
+                    <div class="project-status">In Progress</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Full-Stack Web Application</h3>
+                        <p class="project-description">
+                            Building a production-ready app with modern web technologies. 
+                            Focus on clean architecture and user experience.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card placeholder">
+                    <div class="project-status">Planning</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Data Analysis Tool</h3>
+                        <p class="project-description">
+                            Leveraging my accounting background to build financial analysis 
+                            software for small businesses.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">Visualization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card placeholder">
+                    <div class="project-status">Exploring</div>
+                    <div class="project-content">
+                        <h3 class="project-title">Open Source Contributions</h3>
+                        <p class="project-description">
+                            Contributing to meaningful open source projects while learning 
+                            from experienced developers.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">Open Source</span>
+                            <span class="tech-tag">Collaboration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="me.jpg" alt="Ben - Computer Science Student" class="profile-img">
+                    <div class="image-accent"></div>
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title">A Different Path to Tech</h2>
+                    <p class="about-text">
+                        My journey into software development wasn't traditional. After working 
+                        in accounting and insurance, I discovered my passion for solving problems 
+                        through code. This unconventional background gives me a unique advantage—I 
+                        understand the real-world problems businesses face, not just the technical 
+                        solutions.
+                    </p>
+                    <p class="about-text">
+                        Now as a Computer Science student, I'm combining analytical thinking with 
+                        creative problem-solving to build software that makes a genuine impact. 
+                        I'm especially interested in fintech, business tools, and applications 
+                        that simplify complex processes.
+                    </p>
+                    <div class="skills-list">
+                        <div class="skill-category">
+                            <h4>Technical Skills</h4>
+                            <p>JavaScript, Python, React, Node.js, SQL, Git</p>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Domain Knowledge</h4>
+                            <p>Financial Systems, Business Process, Data Analysis</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote-section">
+        <div class="container">
+            <blockquote class="quote">
+                <p class="quote-text">
+                    "Everything around you that you call life was made up by people 
+                    who were no smarter than you."
+                </p>
+                <cite class="quote-author">— Steve Jobs</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="contact-title">Let's Build Something Together</h2>
+                <p class="contact-description">
+                    I'm always interested in new opportunities, collaborations, or just 
+                    chatting about tech. Whether you're looking for an intern, have a 
+                    project idea, or want to connect—reach out.
+                </p>
+                <div class="contact-methods">
+                    <a href="mailto:your.email@example.com" class="contact-btn">
+                        <span class="contact-icon">✉️</span>
+                        <span>your.email@example.com</span>
+                    </a>
+                    <a href="https://linkedin.com/in/yourprofile" class="contact-btn" target="_blank">
+                        <span class="contact-icon">💼</span>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/yourusername" class="contact-btn" target="_blank">
+                        <span class="contact-icon">🔗</span>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2024 Ben. Built with care and curiosity.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
